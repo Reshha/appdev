@@ -1,43 +1,94 @@
 * {
     margin: 0;
     padding: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
 }
 
-body {
-    background-color: #575654;
-    font-size: 200px;
-}
 nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5em;
     color: #DECBAE;
-
-    position: sticky;
-    top: 0px;
-    padding: 12px 16px;
-    background-color: #00000090;
+    background: #00000050;  /* fallback for old browsers */
 }
 
 #links > a {
-    padding: 4px;
+    margin-right: 1em;
+}
+nav > #logo {
+    font-family: 'Abril Fatface', cursive;
+    
+    letter-spacing: -2px;
+    font-size: 2em;
+    margin-left: 0.5em;
+}
+
+#links > a:link {
     text-decoration: none;
     color: #DECBAE;
 }
 
-#links > a:hover {
-    color: white;
+#links > a:visited {
+    color: #DECBAE;
 }
 
+#links > a:hover {
+    color: #FFFFFF;
+}
 
-
-#logo {
+h1 {
     font-family: 'Abril Fatface', cursive;
-    font-size: 32px;
-    letter-spacing: -2px;
+    
+    letter-spacing: -6px;
     text-transform: none;
+    font-size: 8em;
+    color: #DECBAE;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+
+    background-image: url('./images/event1.png');
+    background-size: cover;
+    background-position: center;
+
+    color: #FFFFFF;
+    text-shadow: 2px 2px 20px #00000098;
+}
+
+#hero > #upcoming {
+    font-size: 2em;
+    letter-spacing: 0.25em;
+    font-weight: 300;
+}
+
+#hero > h2 {
+    font-size: 2em;
+    font-weight: 300;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+
+#hero > p {
+    font-size: 1.2em;
+    font-weight: 250;
+}
+
+hr {
+    width: 50%;
+    border: 1px solid #ffffffff;
+    margin-top: 0.2em;
 }
