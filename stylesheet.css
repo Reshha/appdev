@@ -25,7 +25,16 @@ nav {
 
 #links > a {
     padding: 4px;
+    text-decoration: none;
+    color: #DECBAE;
 }
+
+#links > a:hover {
+    color: white;
+}
+
+
+
 #logo {
     font-family: 'Abril Fatface', cursive;
     font-size: 32px;
